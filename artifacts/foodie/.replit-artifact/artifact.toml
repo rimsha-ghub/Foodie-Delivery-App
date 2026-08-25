@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Foodie Delivery App"
+description = "A vibrant food delivery web app for discovering restaurants, browsing popular dishes, claiming offers, and adding meals to a cart."
+version = "1.0.0"
+id = "artifacts/foodie"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18197
+
+[services.development]
+run = "pnpm --filter @workspace/foodie run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/foodie", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/foodie/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18197"
+BASE_PATH = "/"

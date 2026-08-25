@@ -1,0 +1,145 @@
+Create a visually stunning, colourful and modern food delivery web application called "Foodie".
+
+The website should have a vibrant, energetic food-delivery theme with beautiful food photography, colourful backgrounds, gradients, rounded cards, smooth sections and attractive animations.
+
+OVERALL DESIGN:
+- Use a colourful background instead of plain white.
+- Use warm food-inspired colors such as orange, red, yellow, pink and purple.
+- Use soft gradients throughout the page.
+- Add high-quality food images to make the website visually appealing.
+- Use rounded corners, glassmorphism-style cards, soft shadows and modern typography.
+- Make the website responsive for desktop, tablet and mobile.
+- Keep the design clean and professional despite the colourful appearance.
+
+HEADER:
+- Create a colourful header with the "Foodie" logo.
+- Navigation: Home, Restaurants, Offers, Orders.
+- Location selector: "Deliver to Coimbatore".
+- Search icon.
+- Shopping cart icon.
+- Login / Sign Up button.
+- Use a subtle gradient background.
+
+HERO SECTION:
+- Use a large colourful gradient background combining orange, pink and purple.
+- Add the headline:
+  "Good Food. Great Mood. Delivered."
+- Subtitle:
+  "Order your favourite meals from the best restaurants around you."
+- Add a large search bar:
+  "Search for food or restaurants..."
+- Add a bright "Order Now" button.
+- Add multiple attractive food images such as pizza, burger, biryani and desserts arranged creatively on the right side.
+- Add decorative circles, blobs and food-related illustrations in the background.
+- Add a small badge:
+  "30% OFF on your first order!"
+
+FOOD CATEGORIES:
+Create colourful circular or rounded category cards with food images.
+
+Categories:
+- Pizza
+- Burgers
+- Biryani
+- South Indian
+- Chinese
+- Desserts
+- Beverages
+
+Each category should have:
+- Food image
+- Category name
+- Different subtle background colors
+
+POPULAR RESTAURANTS:
+Create a colourful responsive grid of restaurant cards.
+
+Each card should include:
+- Large restaurant image
+- Restaurant name
+- Cuisine
+- ⭐ Rating
+- Delivery time
+- Delivery fee
+- "View Menu" button
+
+Use restaurants such as:
+- Spice Garden
+- Burger House
+- Pizza Corner
+- Chennai Biryani
+- The South Kitchen
+- Sweet Treats
+
+Make every restaurant card visually different but maintain a consistent design.
+
+POPULAR FOOD:
+Create attractive food cards with large food images.
+
+Food items:
+- Chicken Biryani – ₹199
+- Chicken Burger – ₹149
+- Margherita Pizza – ₹249
+- Masala Dosa – ₹99
+- Chicken Noodles – ₹179
+- Chocolate Cake – ₹129
+
+Each card should include:
+- Food image
+- Food name
+- Restaurant
+- Rating
+- Price
+- "+" Add to Cart button
+
+SPECIAL OFFERS:
+Create a large colourful promotional section with a purple/orange gradient background.
+
+Text:
+"Craving Something Delicious?"
+"Get 30% OFF your first order."
+
+Add:
+"Claim Offer" button
+
+Include attractive food images and decorative shapes.
+
+HOW IT WORKS:
+Create three colourful illustrated steps:
+
+1. 🍔 Choose Your Food
+2. 🛒 Place Your Order
+3. 🚴 Get It Delivered
+
+Use colourful icons and cards.
+
+APP PROMOTION:
+Create a section encouraging users to download the Foodie mobile app.
+
+Include:
+- Smartphone mockup
+- Food images
+- "Order faster with the Foodie app"
+- App Store and Google Play buttons
+
+FOOTER:
+Create a dark colourful footer with:
+- Foodie logo
+- About Us
+- Contact
+- Help & Support
+- Privacy Policy
+- Terms & Conditions
+- Social media icons
+
+VISUAL STYLE:
+- Vibrant and colourful
+- Food photography should be prominent
+- Orange, coral, pink, yellow and purple gradients
+- Modern rounded UI
+- Large attractive headings
+- Smooth shadows
+- Premium restaurant-app appearance
+- Lots of visual elements without making the page cluttered
+- Use realistic food images rather than generic placeholders
+- Make the final website look like a professional food delivery startup landing page.
