@@ -1,0 +1,28 @@
+kind = "video"
+previewPath = "/foodie-showcase/"
+title = "Foodie Showcase Video"
+description = "A short animated product showcase introducing the Foodie delivery experience, from colorful discovery to effortless ordering."
+version = "1.0.0"
+id = "artifacts/foodie-showcase"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/foodie-showcase/" ]
+localPort = 18393
+
+[services.development]
+run = "pnpm --filter @workspace/foodie-showcase run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/foodie-showcase", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/foodie-showcase/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18393"
+BASE_PATH = "/foodie-showcase/"

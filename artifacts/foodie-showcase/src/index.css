@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --cream: #f8f2e9;
+  --ink: #143c3d;
+  --coral: #ef654d;
+  --yellow: #e7c64d;
+  --mint: #d9e9dc;
+  --pink: #f0b3a1;
+  --sand: #e8dfce;
+  --body: 'DM Sans', sans-serif;
+  --display: 'Playfair Display', serif;
+  --mono: 'Space Mono', monospace;
+}
+
+@theme inline {
+  --font-sans: var(--body);
+  --font-serif: var(--display);
+  --font-mono: var(--mono);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; min-height: 100%; width: 100%; }
+body {
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--ink);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.showcase-shell {
+  position: relative;
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
+  overflow: hidden;
+  background: #0e3132;
+}
+
+.video-stage {
+  position: relative;
+  width: min(100vw, 177.78vh);
+  height: min(100vh, 56.25vw);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--cream);
+  isolation: isolate;
+}
+
+.video-stage::before {
+  position: absolute;
+  z-index: 30;
+  inset: 0;
+  pointer-events: none;
+  opacity: .08;
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+.scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.display { font-family: var(--display); }
+.mono { font-family: var(--mono); }
+.scene-pad { padding: 5.2% 6.1%; }
+.eyebrow { font-family: var(--mono); font-size: clamp(7px, .85vw, 13px); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.fine { font-size: clamp(8px, 1vw, 15px); line-height: 1.35; }
+.huge { font-size: clamp(44px, 8.1vw, 142px); line-height: .87; letter-spacing: -.075em; }
+.title { font-size: clamp(27px, 4.4vw, 76px); line-height: .94; letter-spacing: -.065em; }
+.shadow-print { box-shadow: 9px 11px 0 var(--ink); }
+.shadow-coral { box-shadow: 8px 9px 0 var(--coral); }
+.shadow-yellow { box-shadow: 8px 9px 0 var(--yellow); }
+.round-img { border-radius: 48% 52% 45% 55% / 50% 43% 57% 50%; }
+.round-img-two { border-radius: 43% 57% 54% 46% / 57% 47% 53% 43%; }
+.paper-card { background: var(--cream); border: 1px solid rgba(20, 60, 61, .18); }
+.tiny-dot { height: 5px; width: 5px; border-radius: 999px; background: currentColor; }
+.safe-line { position: absolute; inset: 3.4% 4.2%; border: 1px solid rgba(248, 242, 233, .23); pointer-events: none; }
+
+@keyframes floatA { 0%, 100% { transform: translate3d(0, 0, 0) rotate(-5deg); } 50% { transform: translate3d(0, -12px, 0) rotate(-1deg); } }
+@keyframes floatB { 0%, 100% { transform: translate3d(0, 0, 0) rotate(7deg); } 50% { transform: translate3d(0, 10px, 0) rotate(3deg); } }
+@keyframes drift { 0%, 100% { transform: translateX(-1%); } 50% { transform: translateX(1.5%); } }
+@keyframes pulseRing { 0%, 100% { transform: scale(.97); opacity: .75; } 50% { transform: scale(1.04); opacity: 1; } }
+@keyframes dash { from { stroke-dashoffset: 220; } to { stroke-dashoffset: 0; } }
+@keyframes shimmer { from { transform: translateX(-110%); } to { transform: translateX(130%); } }
+
+.float-a { animation: floatA 5s ease-in-out infinite; }
+.float-b { animation: floatB 5.6s ease-in-out infinite; }
+.drift { animation: drift 7s ease-in-out infinite; }
+.pulse-ring { animation: pulseRing 3.5s ease-in-out infinite; }
+.dash-line { stroke-dasharray: 9 8; animation: dash 2.4s ease-out both; }
+.shimmer::after { position: absolute; content: ''; inset: 0 auto 0 -30%; width: 22%; background: rgba(248, 242, 233, .18); transform: skewX(-16deg); animation: shimmer 3.3s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .float-a, .float-b, .drift, .pulse-ring, .dash-line, .shimmer::after { animation: none; }
+}
